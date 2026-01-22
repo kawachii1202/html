@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Melody</title>
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="css/melody.css" />
     <link
       rel="stylesheet"
@@ -28,7 +28,7 @@
     </section>
     <section id="about">
       <div class="container">
-        <div class="about-photo"><img src="./melody.PNG" alt="" /></div>
+        <div class="about-photo"><img src="./img/melody.PNG" alt="" /></div>
         <div class="about-info">
           <div class="name">
             <h3>劉恭顯</h3>
@@ -40,9 +40,16 @@
             <p>UCLA</p>
             <p>政治與國際關係雙學位</p>
           </div>
-          <div>
-            <div>特色</div>
-            <div></div>
+          <div class="skills">
+            <p>特色</p>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">ABC度</span>
+                <span class="skill-bar">
+                  <span class="skill-level">100%</span>
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -83,24 +90,43 @@
     <section id="contact">
       <div class="container">
         <div class="contact-left">
-          <div>Contact Us</div>
+          <p>Contact Us</p>
           <div><p>如有任何疑問，請不要聯絡我們</p></div>
-          <div>
+          <div class="contact-info">
             <div><i class="fa-solid fa-map-pin"></i>UCLA</div>
             <div><i class="fa-solid fa-phone"></i>02-12345678</div>
             <div><i class="fa-regular fa-envelope"></i>mymelody@gmail.com</div>
           </div>
         </div>
         <div class="contact-right">
-          <form action="">
-            <div class="form-group">
-              <label for="name">姓名</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </form>
+          <div class="container">
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">電話</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="form-group">
+                <label for="message">訊息</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="8"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn-submit">確定送出</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
